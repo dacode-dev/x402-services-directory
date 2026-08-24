@@ -135,6 +135,10 @@ async function main() {
 
   mkdirSync(DOCS, { recursive: true });
   writeFileSync(join(DOCS, "services.json"), JSON.stringify(payload, null, 2) + "\n");
+  writeFileSync(
+    join(DOCS, "stats.json"),
+    JSON.stringify({ generatedAt, ...payload.counts }, null, 1) + "\n",
+  );
 
   const rows = payload.services
     .map((s) => {
