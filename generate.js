@@ -7,10 +7,11 @@ import { writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+const ROOT = dirname(fileURLToPath(import.meta.url));
 const DOCS = join(ROOT, "docs");
 const SOURCES = [
   "https://facilitator.openx402.ai/discovery/resources",
+  "https://facilitator.payai.network/discovery/resources",
 ];
 const PROBE_TIMEOUT_MS = 6_000;
 const PROBE_CONCURRENCY = 8;
