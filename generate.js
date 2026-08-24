@@ -195,7 +195,7 @@ footer{margin-top:2rem;color:#666;font-size:.85rem}
 <div><b>${payload.counts.hosts}</b>sellers</div>
 <div><b>${generatedAt.slice(0, 16).replace("T", " ")}Z</b>generated</div>
 </div>
-<table><thead><tr><th>Endpoint</th><th>Seller host</th><th>Price</th><th>Network</th><th>Gate check</th></tr></thead>
+<table id="svc"><thead><tr><th>Endpoint</th><th>Seller host</th><th>Price</th><th>Network</th><th>Gate check</th></tr></thead>
 <tbody>
 ${rows}
 </tbody></table>
@@ -204,10 +204,28 @@ ${rows}
 <script>
 function filterRows(q){
   q = q.toLowerCase();
-  document.querySelectorAll("tbody tr").forEach(function(tr){
+  document.querySelectorAll("#svc tbody tr").forEach(function(tr){
     tr.style.display = tr.textContent.toLowerCase().includes(q) ? "" : "none";
   });
 }
+function sortRows(n){
+  const tb = document.querySelector("#svc tbody");
+  const rows = [...tb.querySelectorAll("tr")];
+  const price = (tr) => {
+    const t = tr.children[2].textContent.trim();
+    return t.startsWith("$") ? parseFloat(t.slice(1)) || 0 : -1;
+  };
+  const key = n === 2 ? price : (n === 4
+    ? (tr) => (tr.children[4].textContent.includes("sellable") ? 0 : tr.children[4].textContent.includes("alive") ? 1 : 2)
+    : (tr) => tr.children[n].textContent.toLowerCase());
+  if (sortRows.lastCol === n) { rows.reverse(); sortRows.asc = !sortRows.asc; }
+  else { rows.sort((a, b) => String(key(a)).localeCompare(String(key(b)), undefined, { numeric: true })); sortRows.lastCol = n; }
+  rows.forEach((r) => tb.appendChild(r));
+}
+document.querySelectorAll("#svc th").forEach((th, i) => {
+  th.style.cursor = "pointer";
+  th.addEventListener("click", () => sortRows(i));
+});
 </script>
 </body></html>\\n`;
 
