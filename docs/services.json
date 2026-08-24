@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-24T14:25:29.944Z",
+  "generatedAt": "2026-08-24T15:12:42.060Z",
   "sources": [
     "https://facilitator.openx402.ai/discovery/resources",
     "https://facilitator.payai.network/discovery/resources"
   ],
   "counts": {
     "total": 149,
-    "alive": 144,
-    "sellable": 103,
+    "alive": 141,
+    "sellable": 102,
     "hosts": 41
   },
   "services": [
@@ -26,10 +26,10 @@
       "facilitator": "facilitator.openx402.ai",
       "lastIndexed": 1787280695,
       "source": "https://facilitator.openx402.ai/discovery/resources",
-      "alive": false,
-      "httpStatus": null,
+      "alive": true,
+      "httpStatus": 404,
       "challengePresent": false,
-      "probedWith": null
+      "probedWith": "GET"
     },
     {
       "url": "https://192.3.171.233/v1/rentals/analyze",
@@ -46,10 +46,10 @@
       "facilitator": "facilitator.payai.network",
       "lastIndexed": "2026-08-24T13:48:54.401Z",
       "source": "https://facilitator.payai.network/discovery/resources",
-      "alive": true,
-      "httpStatus": 404,
+      "alive": false,
+      "httpStatus": null,
       "challengePresent": false,
-      "probedWith": "GET"
+      "probedWith": null
     },
     {
       "url": "https://192.3.171.233/v1/rentals/comps",
@@ -66,10 +66,10 @@
       "facilitator": "facilitator.payai.network",
       "lastIndexed": "2026-08-24T13:49:18.113Z",
       "source": "https://facilitator.payai.network/discovery/resources",
-      "alive": true,
-      "httpStatus": 404,
+      "alive": false,
+      "httpStatus": null,
       "challengePresent": false,
-      "probedWith": "GET"
+      "probedWith": null
     },
     {
       "url": "https://192.3.171.233/v1/rentals/search",
@@ -86,10 +86,10 @@
       "facilitator": "facilitator.payai.network",
       "lastIndexed": "2026-08-24T13:47:16.711Z",
       "source": "https://facilitator.payai.network/discovery/resources",
-      "alive": true,
-      "httpStatus": 404,
+      "alive": false,
+      "httpStatus": null,
       "challengePresent": false,
-      "probedWith": "GET"
+      "probedWith": null
     },
     {
       "url": "https://192.3.171.233/v1/us-freight/carrier-hire-check",
@@ -106,10 +106,10 @@
       "facilitator": "facilitator.payai.network",
       "lastIndexed": "2026-08-23T23:41:05.301Z",
       "source": "https://facilitator.payai.network/discovery/resources",
-      "alive": true,
-      "httpStatus": 404,
+      "alive": false,
+      "httpStatus": null,
       "challengePresent": false,
-      "probedWith": "GET"
+      "probedWith": null
     },
     {
       "url": "https://agent.atinamos.co.uk/payai/agent/render-check",
@@ -996,23 +996,23 @@
       "probedWith": "GET"
     },
     {
-      "url": "https://api.nansen.ai/api/v1/token-screener",
-      "host": "api.nansen.ai",
+      "url": "https://api.paysponge.com/person/enrichment",
+      "host": "api.paysponge.com",
       "type": "http",
-      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "network": "eip155:8453",
       "price": {
-        "raw": "10000",
-        "usd": null,
-        "asset": "epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v"
+        "raw": "20000",
+        "usd": 0.02,
+        "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
       },
-      "payTo": "J7ZvJEspvwP1oRxQZ7mYmNmT22NTm3GWq3t7HEbvPZYx",
+      "payTo": "0x6302D9e6DBB22fEC3c350551568Bb39B4b35Ad57",
       "x402Version": 2,
       "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-08-23T15:29:54.564Z",
+      "lastIndexed": "2026-08-24T14:58:09.715Z",
       "source": "https://facilitator.payai.network/discovery/resources",
       "alive": true,
-      "httpStatus": 402,
-      "challengePresent": true,
+      "httpStatus": 404,
+      "challengePresent": false,
       "probedWith": "GET"
     },
     {
@@ -1148,7 +1148,7 @@
       "payTo": "0xdB5C2dF47e4A6Df74edeb6DE3159ae38b8Cc10fd",
       "x402Version": 2,
       "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-08-24T13:25:17.726Z",
+      "lastIndexed": "2026-08-24T15:00:03.844Z",
       "source": "https://facilitator.payai.network/discovery/resources",
       "alive": true,
       "httpStatus": 404,

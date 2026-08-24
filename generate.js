@@ -72,6 +72,28 @@ function hostOf(url) {
   }
 }
 
+// Buckets services by USDC price so buyers can see the market shape at a glance.
+function buildPriceBuckets(services) {
+  const buckets = {
+    "free-gate": 0,
+    "$0.001-0.01": 0,
+    "$0.01-0.05": 0,
+    "$0.05-0.25": 0,
+    ">$0.25": 0,
+    unknown: 0,
+  };
+  for (const s of services) {
+    const usd = s.price?.usd;
+    if (usd == null) buckets.unknown += 1;
+    else if (usd === 0) buckets["free-gate"] += 1;
+    else if (usd <= 0.01) buckets["$0.001-0.01"] += 1;
+    else if (usd <= 0.05) buckets["$0.01-0.05"] += 1;
+    else if (usd <= 0.25) buckets["$0.05-0.25"] += 1;
+    else buckets[">$0.25"] += 1;
+  }
+  return buckets;
+}
+
 async function main() {
   const results = [];
   for (const src of SOURCES) {
@@ -137,7 +159,7 @@ async function main() {
   writeFileSync(join(DOCS, "services.json"), JSON.stringify(payload, null, 2) + "\n");
   writeFileSync(
     join(DOCS, "stats.json"),
-    JSON.stringify({ generatedAt, ...payload.counts }, null, 1) + "\n",
+    JSON.stringify({ generatedAt, ...payload.counts, priceBuckets: buildPriceBuckets(payload.services) }, null, 1) + "\n",
   );
 
   const rows = payload.services
