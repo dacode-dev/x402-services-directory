@@ -1,0 +1,10 @@
+# x402 Services Directory
+
+> Live directory of x402-paid API services. Each service was probed for a real 402
+> payment challenge at generation time. Data regenerated every 6 hours from public
+> facilitator discovery endpoints.
+
+Machine-readable listing: services.json (array of service objects with url, host,
+price in USDC, network, payTo address, and gate-check verdict).
+
+Consume: fetch /services.json; filter services where challengePresent == true.
