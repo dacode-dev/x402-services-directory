@@ -166,6 +166,7 @@ footer{margin-top:2rem;color:#666;font-size:.85rem}
 </style></head><body>
 <h1>x402 Services Directory</h1>
 <p class="sub">Live view of x402-paid APIs registered with supported facilitators. Regenerated automatically; each service probed for a real 402 payment challenge.</p>
+<p><input id="f" type="search" placeholder="Filter by host or path…" style="width:min(420px,90%);padding:.45rem .6rem;font-size:.9rem" oninput="filterRows(this.value)"></p>
 <div class="stats">
 <div><b>${payload.counts.total}</b>services</div>
 <div><b>${payload.counts.sellable}</b>verified sellable</div>
@@ -178,7 +179,15 @@ ${rows}
 </tbody></table>
 <p>Machine-readable: <a href="services.json">services.json</a>. Source data comes from public facilitator discovery endpoints; listing here is automatic and not an endorsement.</p>
 <footer>Built as a free ecosystem utility. Data © respective sellers; probe results are best-effort.</footer>
-</body></html>\n`;
+<script>
+function filterRows(q){
+  q = q.toLowerCase();
+  document.querySelectorAll("tbody tr").forEach(function(tr){
+    tr.style.display = tr.textContent.toLowerCase().includes(q) ? "" : "none";
+  });
+}
+</script>
+</body></html>\\n`;
 
   writeFileSync(join(DOCS, "index.html"), html);
   console.log(`wrote docs/index.html + docs/services.json at ${generatedAt}`);
