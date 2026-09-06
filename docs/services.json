@@ -1,16 +1,36 @@
 {
-  "generatedAt": "2026-09-05T18:04:10.193Z",
+  "generatedAt": "2026-09-06T00:06:09.723Z",
   "sources": [
     "https://facilitator.openx402.ai/discovery/resources",
     "https://facilitator.payai.network/discovery/resources"
   ],
   "counts": {
     "total": 166,
-    "alive": 163,
-    "sellable": 125,
-    "hosts": 31
+    "alive": 162,
+    "sellable": 123,
+    "hosts": 35
   },
   "services": [
+    {
+      "url": "https://402signal.com/route",
+      "host": "402signal.com",
+      "type": "http",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "price": {
+        "raw": "3000",
+        "usd": null,
+        "asset": "epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v"
+      },
+      "payTo": "HCM423cyKYVUoq9GvmqUphZwYVB6M2wez34i9jzSewLy",
+      "x402Version": 2,
+      "facilitator": "facilitator.payai.network",
+      "lastIndexed": "2026-09-05T23:08:04.195Z",
+      "source": "https://facilitator.payai.network/discovery/resources",
+      "alive": true,
+      "httpStatus": 402,
+      "challengePresent": true,
+      "probedWith": "GET"
+    },
     {
       "url": "https://8940-zhasvezdlhckbikb.splox.app/api/base64",
       "host": "8940-zhasvezdlhckbikb.splox.app",
@@ -324,7 +344,7 @@
       "payTo": "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
       "x402Version": 2,
       "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-09-05T02:09:25.379Z",
+      "lastIndexed": "2026-09-05T22:58:34.908Z",
       "source": "https://facilitator.payai.network/discovery/resources",
       "alive": true,
       "httpStatus": 402,
@@ -612,42 +632,22 @@
       "probedWith": "GET"
     },
     {
-      "url": "https://aiworker.duckdns.org/v1/defi/protocol/:slug",
-      "host": "aiworker.duckdns.org",
+      "url": "https://agentum.lat/business-intelligence",
+      "host": "agentum.lat",
       "type": "http",
       "network": "eip155:8453",
       "price": {
-        "raw": "10000",
-        "usd": 0.01,
+        "raw": "50000",
+        "usd": 0.05,
         "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
       },
-      "payTo": "0xb422C9eEB59Be8AE2B659e08dc3EEaF87492544F",
+      "payTo": "0x1B3217B3F1110b879b687Cc8A23025D197F36dAB",
       "x402Version": 2,
       "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-09-05T01:17:05.275Z",
+      "lastIndexed": "2026-09-05T18:37:43.202Z",
       "source": "https://facilitator.payai.network/discovery/resources",
       "alive": true,
-      "httpStatus": 402,
-      "challengePresent": true,
-      "probedWith": "GET"
-    },
-    {
-      "url": "https://aiworker.duckdns.org/v1/scrape/summary",
-      "host": "aiworker.duckdns.org",
-      "type": "http",
-      "network": "eip155:8453",
-      "price": {
-        "raw": "40000",
-        "usd": 0.04,
-        "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
-      },
-      "payTo": "0xb422C9eEB59Be8AE2B659e08dc3EEaF87492544F",
-      "x402Version": 2,
-      "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-09-05T01:17:18.751Z",
-      "source": "https://facilitator.payai.network/discovery/resources",
-      "alive": true,
-      "httpStatus": 404,
+      "httpStatus": 405,
       "challengePresent": false,
       "probedWith": "GET"
     },
@@ -669,6 +669,46 @@
       "alive": true,
       "httpStatus": 401,
       "challengePresent": false,
+      "probedWith": "GET"
+    },
+    {
+      "url": "https://api.dev.hypercli.com/agents/x402/solo",
+      "host": "api.dev.hypercli.com",
+      "type": "http",
+      "network": "eip155:8453",
+      "price": {
+        "raw": "10000",
+        "usd": 0.01,
+        "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+      },
+      "payTo": "0xEbAFCd94180A67D4a25A46aA1774864C9000895D",
+      "x402Version": 2,
+      "facilitator": "facilitator.payai.network",
+      "lastIndexed": "2026-09-05T22:47:19.372Z",
+      "source": "https://facilitator.payai.network/discovery/resources",
+      "alive": true,
+      "httpStatus": 405,
+      "challengePresent": false,
+      "probedWith": "GET"
+    },
+    {
+      "url": "https://api.generalrelay.xyz/v1/vessels",
+      "host": "api.generalrelay.xyz",
+      "type": "http",
+      "network": "eip155:8453",
+      "price": {
+        "raw": "20000",
+        "usd": 0.02,
+        "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+      },
+      "payTo": "0xcd329EfE4eCb2e87866f75bCf7944550F530e246",
+      "x402Version": 2,
+      "facilitator": "facilitator.payai.network",
+      "lastIndexed": "2026-09-05T18:23:55.507Z",
+      "source": "https://facilitator.payai.network/discovery/resources",
+      "alive": true,
+      "httpStatus": 402,
+      "challengePresent": true,
       "probedWith": "GET"
     },
     {
@@ -735,16 +775,16 @@
       "url": "https://api.paysponge.com/v0/inboxes",
       "host": "api.paysponge.com",
       "type": "http",
-      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "network": "eip155:8453",
       "price": {
-        "raw": "0",
-        "usd": null,
-        "asset": "epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v"
+        "raw": "2000000",
+        "usd": 2,
+        "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
       },
-      "payTo": "7r4e5dwNS68MDaxbw7N8jbzHq7RCMBp9z6smHFH4NXWw",
+      "payTo": "0x6e3184C204e596dED89E8A5693B602097F4Ab687",
       "x402Version": 2,
       "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-09-05T11:03:03.948Z",
+      "lastIndexed": "2026-09-05T23:35:47.409Z",
       "source": "https://facilitator.payai.network/discovery/resources",
       "alive": true,
       "httpStatus": 404,
@@ -764,7 +804,7 @@
       "payTo": "0x6e3184C204e596dED89E8A5693B602097F4Ab687",
       "x402Version": 2,
       "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-09-05T04:01:06.175Z",
+      "lastIndexed": "2026-09-05T23:37:53.334Z",
       "source": "https://facilitator.payai.network/discovery/resources",
       "alive": true,
       "httpStatus": 404,
@@ -784,7 +824,7 @@
       "payTo": "7r4e5dwNS68MDaxbw7N8jbzHq7RCMBp9z6smHFH4NXWw",
       "x402Version": 2,
       "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-09-05T17:19:13.558Z",
+      "lastIndexed": "2026-09-05T22:48:51.518Z",
       "source": "https://facilitator.payai.network/discovery/resources",
       "alive": true,
       "httpStatus": 404,
@@ -815,16 +855,16 @@
       "url": "https://api.paysponge.com/v0/inboxes/:inbox_id/threads",
       "host": "api.paysponge.com",
       "type": "http",
-      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "network": "eip155:8453",
       "price": {
         "raw": "0",
-        "usd": null,
-        "asset": "epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v"
+        "usd": 0,
+        "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
       },
-      "payTo": "7r4e5dwNS68MDaxbw7N8jbzHq7RCMBp9z6smHFH4NXWw",
+      "payTo": "0x6e3184C204e596dED89E8A5693B602097F4Ab687",
       "x402Version": 2,
       "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-09-05T11:38:47.141Z",
+      "lastIndexed": "2026-09-05T23:36:22.384Z",
       "source": "https://facilitator.payai.network/discovery/resources",
       "alive": true,
       "httpStatus": 404,
@@ -835,16 +875,16 @@
       "url": "https://api.paysponge.com/v0/inboxes/:inbox_id/threads/:thread_id",
       "host": "api.paysponge.com",
       "type": "http",
-      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "network": "eip155:8453",
       "price": {
         "raw": "0",
-        "usd": null,
-        "asset": "epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v"
+        "usd": 0,
+        "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
       },
-      "payTo": "7r4e5dwNS68MDaxbw7N8jbzHq7RCMBp9z6smHFH4NXWw",
+      "payTo": "0x6e3184C204e596dED89E8A5693B602097F4Ab687",
       "x402Version": 2,
       "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-09-05T11:41:30.020Z",
+      "lastIndexed": "2026-09-05T23:37:32.158Z",
       "source": "https://facilitator.payai.network/discovery/resources",
       "alive": true,
       "httpStatus": 404,
@@ -924,7 +964,7 @@
       "payTo": "0xdB5C2dF47e4A6Df74edeb6DE3159ae38b8Cc10fd",
       "x402Version": 2,
       "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-09-05T17:00:02.607Z",
+      "lastIndexed": "2026-09-05T22:00:05.119Z",
       "source": "https://facilitator.payai.network/discovery/resources",
       "alive": true,
       "httpStatus": 404,
@@ -944,7 +984,7 @@
       "payTo": "0xdB5C2dF47e4A6Df74edeb6DE3159ae38b8Cc10fd",
       "x402Version": 2,
       "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-09-05T16:08:03.509Z",
+      "lastIndexed": "2026-09-05T22:08:02.860Z",
       "source": "https://facilitator.payai.network/discovery/resources",
       "alive": true,
       "httpStatus": 404,
@@ -1092,22 +1132,6 @@
       "probedWith": "GET"
     },
     {
-      "url": "https://commsharbor.com/api/credito",
-      "host": "commsharbor.com",
-      "type": "http",
-      "network": "base",
-      "price": null,
-      "payTo": "0x7c22D10a957c62044d03dB5C0086f500Fc645a26",
-      "x402Version": 1,
-      "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-09-05T01:14:33.184Z",
-      "source": "https://facilitator.payai.network/discovery/resources",
-      "alive": true,
-      "httpStatus": 401,
-      "challengePresent": false,
-      "probedWith": "GET"
-    },
-    {
       "url": "https://councilof.ai/api/free-door",
       "host": "councilof.ai",
       "type": "http",
@@ -1128,22 +1152,22 @@
       "probedWith": "GET"
     },
     {
-      "url": "https://demo.aiapi.ch/v1/analyze",
-      "host": "demo.aiapi.ch",
+      "url": "https://cracked.ai/v1/run",
+      "host": "cracked.ai",
       "type": "http",
-      "network": "eip155:84532",
+      "network": "eip155:8453",
       "price": {
         "raw": "10000",
-        "usd": null,
-        "asset": "0x036cbd53842c5426634e7929541ec2318f3dcf7e"
+        "usd": 0.01,
+        "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
       },
-      "payTo": "0x64842Cd797198143A8fF191E4BDBDE7E0fBF7f6D",
+      "payTo": "0x9cfa76148b8c3c3b624bc83bb5df1c3bd7c987ca",
       "x402Version": 2,
       "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-09-05T01:37:39.325Z",
+      "lastIndexed": "2026-09-05T20:05:28.954Z",
       "source": "https://facilitator.payai.network/discovery/resources",
       "alive": true,
-      "httpStatus": 404,
+      "httpStatus": 405,
       "challengePresent": false,
       "probedWith": "GET"
     },
@@ -1952,7 +1976,7 @@
       "payTo": "0x4F568Bf0cE8537CBE7a0DAF1A43C955e0a648db9",
       "x402Version": 2,
       "facilitator": "facilitator.openx402.ai",
-      "lastIndexed": 1788552880,
+      "lastIndexed": 1788639141,
       "source": "https://facilitator.openx402.ai/discovery/resources",
       "alive": true,
       "httpStatus": 402,
@@ -2314,66 +2338,10 @@
       "facilitator": "facilitator.payai.network",
       "lastIndexed": "2026-09-05T16:32:40.361Z",
       "source": "https://facilitator.payai.network/discovery/resources",
-      "alive": true,
-      "httpStatus": 402,
-      "challengePresent": true,
-      "probedWith": "GET"
-    },
-    {
-      "url": "https://radar-cnpj.com/api/me/monitor/watch",
-      "host": "radar-cnpj.com",
-      "type": "http",
-      "network": "base",
-      "price": null,
-      "payTo": "0x7c22D10a957c62044d03dB5C0086f500Fc645a26",
-      "x402Version": 1,
-      "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-09-05T01:16:13.791Z",
-      "source": "https://facilitator.payai.network/discovery/resources",
-      "alive": true,
-      "httpStatus": 405,
+      "alive": false,
+      "httpStatus": null,
       "challengePresent": false,
-      "probedWith": "GET"
-    },
-    {
-      "url": "https://relay402.georgespring.workers.dev/api/agent-eval-case-generate",
-      "host": "relay402.georgespring.workers.dev",
-      "type": "http",
-      "network": "eip155:8453",
-      "price": {
-        "raw": "20000",
-        "usd": 0.02,
-        "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
-      },
-      "payTo": "0x73fc43d426a89577c7b58f5fee50ec95d4396079",
-      "x402Version": 2,
-      "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-09-05T02:01:03.689Z",
-      "source": "https://facilitator.payai.network/discovery/resources",
-      "alive": true,
-      "httpStatus": 402,
-      "challengePresent": true,
-      "probedWith": "GET"
-    },
-    {
-      "url": "https://relay402.georgespring.workers.dev/api/agent-mcp-tool-risk-score",
-      "host": "relay402.georgespring.workers.dev",
-      "type": "http",
-      "network": "eip155:8453",
-      "price": {
-        "raw": "20000",
-        "usd": 0.02,
-        "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
-      },
-      "payTo": "0x73fc43d426a89577c7b58f5fee50ec95d4396079",
-      "x402Version": 2,
-      "facilitator": "facilitator.payai.network",
-      "lastIndexed": "2026-09-05T02:01:05.939Z",
-      "source": "https://facilitator.payai.network/discovery/resources",
-      "alive": true,
-      "httpStatus": 402,
-      "challengePresent": true,
-      "probedWith": "GET"
+      "probedWith": null
     },
     {
       "url": "https://relay402.georgespring.workers.dev/api/agent-tool-call-diff",
@@ -2936,6 +2904,26 @@
       "probedWith": "GET"
     },
     {
+      "url": "https://sendcheck-x402.pennyforge.workers.dev/check",
+      "host": "sendcheck-x402.pennyforge.workers.dev",
+      "type": "http",
+      "network": "eip155:8453",
+      "price": {
+        "raw": "10000",
+        "usd": 0.01,
+        "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+      },
+      "payTo": "0x9504A5939AB5be2B2B1F8beA7D7ebeCcd96c485D",
+      "x402Version": 2,
+      "facilitator": "facilitator.payai.network",
+      "lastIndexed": "2026-09-05T23:42:20.867Z",
+      "source": "https://facilitator.payai.network/discovery/resources",
+      "alive": true,
+      "httpStatus": 404,
+      "challengePresent": false,
+      "probedWith": "GET"
+    },
+    {
       "url": "https://sigtap-outreach-api.sigtap.workers.dev/deliverability",
       "host": "sigtap-outreach-api.sigtap.workers.dev",
       "type": "http",
@@ -3131,9 +3119,9 @@
       "lastIndexed": "2026-09-05T15:32:56.935Z",
       "source": "https://facilitator.payai.network/discovery/resources",
       "alive": true,
-      "httpStatus": 402,
-      "challengePresent": true,
-      "probedWith": "GET"
+      "httpStatus": 404,
+      "challengePresent": false,
+      "probedWith": "POST"
     },
     {
       "url": "https://sigtap-outreach-api.sigtap.workers.dev/tools/uuid",
@@ -3189,6 +3177,26 @@
       "x402Version": 2,
       "facilitator": "facilitator.payai.network",
       "lastIndexed": "2026-09-05T11:34:51.736Z",
+      "source": "https://facilitator.payai.network/discovery/resources",
+      "alive": true,
+      "httpStatus": 402,
+      "challengePresent": true,
+      "probedWith": "GET"
+    },
+    {
+      "url": "https://www.fomoscan.dev/v2/user/wallet/7tCETmedwBk4zFjmq7xcDo1vCMDTFNfDkobXyNj2grR3",
+      "host": "www.fomoscan.dev",
+      "type": "http",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "price": {
+        "raw": "200000",
+        "usd": null,
+        "asset": "epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v"
+      },
+      "payTo": "AAqqPjkD7SJk64t1wvgUcBNpqWXnQwCDjfAhQksEDpFu",
+      "x402Version": 2,
+      "facilitator": "facilitator.payai.network",
+      "lastIndexed": "2026-09-05T20:08:18.594Z",
       "source": "https://facilitator.payai.network/discovery/resources",
       "alive": true,
       "httpStatus": 402,
